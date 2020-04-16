@@ -1,0 +1,2 @@
+default: -p json 
+json: -f json -o log/report.json -f pretty
