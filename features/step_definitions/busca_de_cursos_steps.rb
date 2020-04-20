@@ -1,22 +1,34 @@
 # frozen_string_literal: true
 
+## contexto
 Dado('que estou na home page') do
   expect(page).to have_current_path($home_page)
 end
 
 Quando('realizar a {string}') do |title|
-  @estrategia.professor.goto_professor_page
-  expect(page).to have_current_path($professor_page)
+  @estrategia.buscas.goto(title)
 end
 
-Quando('filtrar pelo {string}') do |by_name|
-  @estrategia.professor.find_by_professor(by_name)
+Quando('buscar por {string}') do |by_name|
+  @estrategia.buscas.find_by_professor(by_name)
 end
 
-Então('escolher um dos cursos e ir para a página detalhes') do
-  @estrategia.professor.find_course
+Então('escolher um dos cursos pelo {string} e ir para os detalhes') do |method|
+  @estrategia.buscas.find_course_pay(method)
 end
 
-Então('conferir se os valores das duas páginas estão iguais, incluindo o valor de parcelamento') do
-  expect(@estrategia.professor.v_correto?).to be_truthy
+Então('conferir se os valores das duas páginas estão corretos') do
+  expect(@estrategia.buscas.valor_curso_correto?).to be_truthy
 end
+
+####
+Quando('filtrar por {string}') do |estado|
+  @estado = estado
+  click_link("#{estado}")
+end
+
+Então('deve haver um titulo de cursos no estado escolhido') do
+  expect(@estrategia.buscas.titulo_do_estado?).to have_text "Cursos em #{@estado}"
+end
+
+###

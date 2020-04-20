@@ -3,9 +3,9 @@
 require_relative 'busca_de_cursos_page'
 
 class EstrategiaPages
-  attr_accessor :professor
+  attr_accessor :buscas
 
   def initialize
-    @professor = BuscarPorProfessor.new
+    @buscas = BuscasPor.new
   end
 end
