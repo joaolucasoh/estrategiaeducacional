@@ -1,9 +1,18 @@
 # frozen_string_literal: true
 
 require 'report_builder'
+require 'capybara/rspec'
 
 Before do |_scenario|
   visit('/')
+  within('#onesignal-popover-dialog') do
+    click_on('Não')
+  end
+  @estrategia = EstrategiaPages.new
+end
+
+After do |_scenario|
+  Capybara.reset_sessions!
 end
 
 After do |_scenario|
