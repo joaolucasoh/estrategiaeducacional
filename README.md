@@ -1,44 +1,44 @@
-# QA Engineer Challenge - Prática
+# QA Engineer Challenge
 
-## Instalando dependências para rodar o projeto
+## Installing dependencies to run the project.
 
-Antes de clonar o projeto, precisamos garantir que algumas dependências estejam instaladas em sua máquina.
+Before cloning the project, we need to ensure that some dependencies are installed on your machine.
 
-Basicamente precisamos instalar:
+Basically we need to install:
 
 * Ruby
 * vscode
 * chromedriver
 
-## Tecnologias Utilizadas
-O projeto utiliza as seguintes tecnologias:
+## Technologies
+The project uses the following technologies:
 
-* Ruby, Cucumber e Capybara
+* Ruby, Cucumber and Capybara
 
-### Em cada link contém o passo a passo para instalação/download dos pré-requisitos:
+### Each link contains the step by step to install / download the prerequisites:
 
-* [Ruby](https://www.ruby-lang.org/pt/documentation/installation/) - versão utilizada no projeto 2.6.3
-* [VScode](https://code.visualstudio.com/) - a 'ide' é bem particular, tem que curta o Sublime, Eclipse, Ruby Mine e etc.
-* [Chromedriver](https://chromedriver.chromium.org/downloads) - a versão tem que estar de acordo com a versão do chrome.
+* [Ruby](https://www.ruby-lang.org/pt/documentation/installation/) - version used in the 2.6.3 project
+* [VScode](https://code.visualstudio.com/) - the 'ide' is very private, there are those who like Sublime, Eclipse, Ruby Mine and etc.
+* [Chromedriver](https://chromedriver.chromium.org/downloads) - the version has to be in accordance with the google chrome version.
 
-### Clone o projeto:
+### Clone the project:
 
 https://github.com/joaolucasoh/estrategiaeducacional.git
 
-### Primeiros passos:
+### Clone the project:
 
-Após instalar ruby e cia, em seu terminal de preferência digite os seguintes comandos:
+After installing ruby and co, in your preferred terminal type the following commands:
   <b>gem install bundler</b>
 
-Acessando a pasta do projeto já clonado, digitar o seguinte comando:
+Accessing the project folder already cloned, type the following command:
   <b>bundle install</b>
 
-Todas gems contidas no arquivo Gemfile foram instaladas. :)
+All gems contained in the Gemfile file have been installed. <b>:)</b>
 
-### Como rodar meus cenários?
-* cucumber (roda todos cenários)
-* cucumber <b>-t @nome_do_cenario</b> (roda um cenário em especifico de acordo com a tag)
+### How do I run my scenarios?
+* cucumber (run all scenarios)
+* cucumber <b>-t @scenario_name</b> (runs a specific scenario according to the tag.)
 
-### Pasta Log
+### Log folder
 
-A pasta log contém os reports após as execuções e um arquivo bugs.txt contendo sugestão de bugs e possíveis melhorias.
+The log folder contains reports after executions and a bugs.txt file containing suggested bugs and possible improvements. Both files will not be in the repository in order to reduce the occupancy of the repository.
