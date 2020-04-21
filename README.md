@@ -34,8 +34,8 @@ All gems contained in the Gemfile file have been installed. <b>:)</b>
 * cucumber (run all scenarios)
 * cucumber <b>-t @scenario_name</b> (runs a specific scenario according to the tag.)
 * Choose your browser: 
-  browser:[chrome,firefox,headless]
-  cucumber <b>BROWSER=firefox</b>
+  - browser:[chrome,firefox,headless]
+  - cucumber <b>BROWSER=firefox</b>
 
 ### Log folder
 
