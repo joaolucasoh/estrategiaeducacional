@@ -25,12 +25,9 @@ The project uses the following technologies:
 
 https://github.com/joaolucasoh/estrategiaeducacional.git
 
-### Clone the project:
+### Installing all gems from the gemfile file:
 
-After installing ruby and co, in your preferred terminal type the following commands:
-  <b>gem install bundler</b>
-
-Accessing the project folder already cloned, type the following command:
+After following the instructions contained in the Setup folder, and in the project folder execute the following command:
   <b>bundle install</b>
 
 All gems contained in the Gemfile file have been installed. <b>:)</b>
@@ -38,6 +35,7 @@ All gems contained in the Gemfile file have been installed. <b>:)</b>
 ### How do I run my scenarios?
 * cucumber (run all scenarios)
 * cucumber <b>-t @scenario_name</b> (runs a specific scenario according to the tag.)
+* Choose your browser: browser:[chrome,firefox,headless] cucumber BROWSER=firefox
 
 ### Log folder
 
