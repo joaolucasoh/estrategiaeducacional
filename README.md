@@ -10,7 +10,7 @@ Basicamente precisamos instalar:
 * vscode
 * chromedriver
 
-### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 O projeto utiliza as seguintes tecnologias:
 
 * Ruby, Cucumber e Capybara
@@ -28,5 +28,13 @@ https://github.com/joaolucasoh/estrategiaeducacional.git
 ### Primeiros passos:
 
 Após instalar ruby e cia, em seu terminal de preferência digite os seguintes comandos:
+  <b>gem install bundler</b>
 
-gem install bundler
+Acessando a pasta do projeto já clonado, digitar o seguinte comando:
+  <b>bundle install</b>
+
+Todas gems contidas no arquivo Gemfile foram instaladas. :)
+
+### Como rodar meus cenários?
+* cucumber (roda todos cenários)
+* cucumber <b>-t @nome_do_cenario</b> (roda um cenário em especifico de acordo com a tag)
