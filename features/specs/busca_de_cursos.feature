@@ -1,6 +1,6 @@
 # language: pt
 
-@buscas_de_cursos @recuse_popup
+@buscas_de_cursos
 Funcionalidade: Realizar a busca de um curso/professor através do mecanismo de busca da home page e setorizadas
     Sendo um usuário final e estando devidamente com a home page aberta
     Devo conseguir realizar buscas de cursos e seus respectivos professores através da busca

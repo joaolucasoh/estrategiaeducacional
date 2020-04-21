@@ -28,7 +28,5 @@ Quando('filtrar por {string}') do |estado|
 end
 
 Então('deve haver um titulo de cursos no estado escolhido') do
-  expect(@estrategia.buscas.titulo_do_estado?).to have_text "Cursos em #{@estado}"
+  expect(@estrategia.buscas.titulo_do_estado?).to have_text("Cursos em #{@estado}")
 end
-
-###

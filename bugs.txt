@@ -1,0 +1,9 @@
+Bugs / Melhorias - Estratégia Educacional
+
+- Ao realizar uma busca 'por professor' > ir para a tela de detalhes > quando volta para a pagina anterior, o nome do professor continua no filtro mas todos os cursos estão listados independente do filtro.
+- Quando clico para comprar o produto, a url utiliza uma chamada da url inteira: https://www.estrategiaconcursos.com.br/loja/entrar/?goto=https://www.estrategiaconcursos.com.br/loja/cesta/adicionar/?produto=84231 , ao invés de um alias ou simplesmente pelo código do produto direto.
+- No carrinho não é exibido detalhadamente o curso que está sendo comprado, apenas a forma de pagamento(12x parcelado ou não)
+- Exibir os cursos de acordo com o match do que está sendo digitado, na busca principal.
+- Ao inserir o começo do nome de um professor e clicar no botão 'Todos os professores', o botão não tem ação.
+- Ajustar o like da busca principal. Se coloco ‘’Finanç’’ ele encontra um resultado apenas, mas se adiciono ‘’Finanças’’ são mais de 30 resultados.
+- Ao filtrar um curso por estado, os mesmos cursos são exibidos para qualquer estado que for colocado.

@@ -11,14 +11,10 @@ Before do |_scenario|
   @estrategia = EstrategiaPages.new
 end
 
-After do |_scenario|
-  Capybara.reset_sessions!
-end
-
-After do |_scenario|
-  shot_file = page.save_screenshot('log/screenshot.png', full: true)
-  shot_b64 = Base64.encode64(File.open(shot_file, 'rb').read)
-  embed(shot_b64, 'image/png","Clique aqui para ver o screenshot')
+After do 
+  temp_shot = page.save_screenshot('log/image.png')
+  screenshot = Base64.encode64(File.open(temp_shot).read)
+  embed(screenshot, 'image/png', 'Screenshot')
 end
 
 at_exit do
@@ -33,7 +29,7 @@ at_exit do
     config.report_types = [:html]
     config.report_title = 'QA Engineer Challenge!'
     config.additional_info = @infos
-    config.color = 'purple'
+    config.color = 'indigo'
   end
   ReportBuilder.build_report
 end

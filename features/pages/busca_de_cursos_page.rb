@@ -17,7 +17,9 @@ class BuscasPor < SitePrism::Page
   end
 
   def titulo_do_estado?
-    find('.page-courses .section-header-title').text
+    regiao_title = find('.page-courses .section-header-title')
+    page.execute_script('arguments[0].scrollIntoView();', regiao_title)
+    regiao_title.text
   end
 
   def find_by_professor(name)
@@ -56,16 +58,6 @@ class BuscasPor < SitePrism::Page
   def scan_string_detalhespage
     vcurso_d = first('.value').text
     @valor_detalhes = vcurso_d[/\d+.*,\d+/].gsub('.', '').gsub(',', '.').to_f
-  end
-
-  def valor_curso_parcelado_correto?
-    scan_strings_parcela
-    valor_p = @vparcelas * @nparcelas
-
-    choose_course
-
-    scan_string_detalhespage
-    valor_p == @valor_detalhes
   end
 
   def valor_curso_correto?
