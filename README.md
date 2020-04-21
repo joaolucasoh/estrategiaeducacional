@@ -15,11 +15,9 @@ The project uses the following technologies:
 
 * Ruby, Cucumber and Capybara
 
-### Each link contains the step by step to install / download the prerequisites:
+### Setup folder contains the step by step to install / download the prerequisites:
 
-* [Ruby](https://www.ruby-lang.org/pt/documentation/installation/) - version used in the 2.6.3 project
-* [VScode](https://code.visualstudio.com/) - the 'ide' is very private, there are those who like Sublime, Eclipse, Ruby Mine and etc.
-* [Chromedriver](https://chromedriver.chromium.org/downloads) - the version has to be in accordance with the google chrome version.
+Inside the Setup folder, there is a step-by-step guide for installing all dependencies according to Windows, MacOS and Linux platforms.
 
 ### Clone the project:
 
@@ -35,7 +33,9 @@ All gems contained in the Gemfile file have been installed. <b>:)</b>
 ### How do I run my scenarios?
 * cucumber (run all scenarios)
 * cucumber <b>-t @scenario_name</b> (runs a specific scenario according to the tag.)
-* Choose your browser: browser:[chrome,firefox,headless] cucumber BROWSER=firefox
+* Choose your browser: 
+  browser:[chrome,firefox,headless]
+  cucumber <b>BROWSER=firefox</b>
 
 ### Log folder
 
