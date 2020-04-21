@@ -1,15 +1,14 @@
 # QA Engineer Challenge - Prática
 
-## Criando um Repositório no Github
+## Instalando dependências para rodar o projeto
 
-Uma vez feito o login no Github, podemos criar um novo repositório de um projeto facilmente clicando em **[+ New Repository]**, localizado no canto inferior direito da tela, conforme a imagem abaixo:
+Antes de clonar o projeto, precisamos garantir que algumas dependências estejam instaladas em sua máquina.
 
-![Novo Repositório no Github](imgs/g1.png)
+Basicamente precisamos instalar:
 
-Na tela seguinte colocamos os dados do novo repositório:
-
-* nome
-* descrição
+* Ruby
+* vscode
+* chromedriver
 
 E selecionamos a *checkbox* **initialize this repository with a README**. O que essa opção faz é que ao invés de ter um repositório vazio, ele criará um repositório já com um commit responsavel por criar um arquivo README com os dados de nome e descrição do projeto. Isso é algo que agiliza um pouco as coisas. Em seguida clicamos em **[Create Repository]**
 
