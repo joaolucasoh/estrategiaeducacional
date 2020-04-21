@@ -38,3 +38,7 @@ Todas gems contidas no arquivo Gemfile foram instaladas. :)
 ### Como rodar meus cenários?
 * cucumber (roda todos cenários)
 * cucumber <b>-t @nome_do_cenario</b> (roda um cenário em especifico de acordo com a tag)
+
+### Pasta Log
+
+A pasta log contém os reports após as execuções e um arquivo bugs.txt contendo sugestão de bugs e possíveis melhorias.
