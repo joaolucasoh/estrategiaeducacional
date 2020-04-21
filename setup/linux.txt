@@ -1,0 +1,40 @@
+##### Configurando o Linux:
+
+O que vamos instalar?
+     - Git
+    - rbenv
+    - rubybuild
+    - Ruby
+    - bundler
+    - chromedriver/geckodriver
+
+Instalando o git:
+    Rodar os seguintes comandos no terminal:
+    - sudo apt-get update (atualiza o gerenciador de pacotes do linux, antes de mais nada)
+    - sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+    - sudo apt-get install git
+
+Instalando o rbenv(gerenciador de versão do ruby):
+    - git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    - echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    - echo 'eval"$(RBENV INIT -)"' >> ~/.bashrc
+    - source ~/.bashrc
+
+Instalando o rubybuild:
+    - git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+Instalando o ruby:
+    - rbenv install 2.6.3
+    - rbenv global 2.6.3 (setando a versão global, considerando que podemos ter N versões do Ruby)
+    - ruby -v (confira a versão instalada)
+
+Instalando o bundler:
+Bundler é uma gem utilizada para controlar as dependencias de um projeto ruby.
+    - gem install bundler
+
+Extraindo o chromedriver/geckodriver: 
+O chromedriver é um servidor autônomo que implementa o protocolo de conexão do webdriver para o chromium, e o geckodriver para o Mozilla Firefox.
+Baixar e extrair a versão que esteja de acordo com a versão do seu navegador:
+    - chromedriver: https://chromedriver.chromium.org/downloads
+    - geckodriver: https://github.com/mozilla/geckodriver/releases
+    - extraia os arquivos dentro da pasta /usr/local/bin
