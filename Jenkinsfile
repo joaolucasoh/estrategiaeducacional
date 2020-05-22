@@ -12,7 +12,7 @@ pipeline {
         }
         stage("Simulando testes") {
             steps {
-                sh "cucumber"
+                sh "cucumber BROWSER=headless"
             }
         }
     }
