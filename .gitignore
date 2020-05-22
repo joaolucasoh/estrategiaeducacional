@@ -1,1 +1,4 @@
-log/*
+log/*.html
+log/*.json
+log/*.txt
+log/*.png

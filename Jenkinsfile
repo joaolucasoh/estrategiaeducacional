@@ -1,18 +1,20 @@
 pipeline {
     agent {
         docker {
-            image "ruby"
+            image "ruby:alpine"
         }
     }
     stages {
         stage("Build") {
             steps {
+                sh "chmod +x build/alpine.sh"
+                sh "./build/alpine.sh"
                 sh "bundle install"
             }
         }
-        stage("Simulando testes") {
+        stage("Tests") {
             steps {
-                sh "cucumber BROWSER=headless"
+                sh "bundle exec cucumber BROWSER=headless"
             }
         }
     }
