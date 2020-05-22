@@ -3,7 +3,7 @@ echo "http://dl-4.alpinelinux.org/alpine/v3.9/community" >> /etc/apk/repositorie
 
 apk update && \
 	apk add build-base \
-    apk add curl curl-dev bash \
+    curl curl-dev bash \
     libxml2-dev \
     libxslt-dev \
     curl \
