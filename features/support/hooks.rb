@@ -5,9 +5,9 @@ require 'capybara/rspec'
 
 Before do |_scenario|
   visit('/')
-  within('#onesignal-popover-dialog') do
-    click_on('Não')
-  end
+  # within('#onesignal-popover-dialog') do
+  #   click_on('Não')
+  # end
   @estrategia = EstrategiaPages.new
 end
 
