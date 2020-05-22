@@ -97,11 +97,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara
-  cucumber
+  capybara (= 3.31.0)
+  cucumber (= 3.1.2)
   pry
   report_builder
-  rspec
+  rspec (= 3.9)
   rubocop
   selenium-webdriver
   site_prism
