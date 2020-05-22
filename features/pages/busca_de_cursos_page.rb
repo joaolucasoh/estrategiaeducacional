@@ -7,8 +7,8 @@ class BuscasPor < SitePrism::Page
   attr_reader :buscas
 
   element :professor_page, "a[href='#{$professor_page}']"
-  element :materia_page , "a[href='#{$materia_page}']"
-  element :regiao_page , "a[href='#{$regiao_page}']"
+  element :materia_page, "a[href='#{$materia_page}']"
+  element :regiao_page, "a[href='#{$regiao_page}']"
 
   def goto(by)
     professor_page.click if by == 'por professor'
@@ -62,14 +62,18 @@ class BuscasPor < SitePrism::Page
 
   def valor_curso_correto?
     if @metodo == 'parcelado'
+      binding.pry
       scan_strings_parcela
       valor_p = @vparcelas * @nparcelas
       choose_course
+      binding.pry
       scan_string_detalhespage
       valor_p == @valor_detalhes
     elsif @metodo == 'a vista'
+      binding.pry
       scan_string_avista
       choose_course
+      binding.pry
       scan_string_detalhespage
       @valor_vista == @valor_detalhes
     end

@@ -8,16 +8,16 @@ Funcionalidade: Realizar a busca de um curso/professor através do mecanismo de 
 Contexto: Confirmar estar na home page
     Dado que estou na home page
 
-@confirmacao_valores
-Esquema do Cenário: Buscar curso por professor com valor parcelado
-    Quando realizar a '<busca por>'
-    E buscar por '<professor>'
-    Então escolher um dos cursos pelo '<meio de pagamento>' e ir para os detalhes
-    E conferir se os valores das duas páginas estão corretos
-    Exemplos:
-        | busca por     | professor  | meio de pagamento |
-        | por professor | Ena Loiola | parcelado         |
-        | por professor | Ena Loiola | a vista           |
+# @confirmacao_valores
+# Esquema do Cenário: Buscar curso por professor com valor parcelado
+#     Quando realizar a '<busca por>'
+#     E buscar por '<professor>'
+#     Então escolher um dos cursos pelo '<meio de pagamento>' e ir para os detalhes
+#     E conferir se os valores das duas páginas estão corretos
+#     Exemplos:
+#         | busca por     | professor  | meio de pagamento |
+#         | por professor | Ena Loiola | parcelado         |
+#         | por professor | Ena Loiola | a vista           |
 
 @cursos_por_regiao
 Esquema do Cenário: Buscar curso por região
